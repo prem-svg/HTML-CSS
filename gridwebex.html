@@ -1,0 +1,68 @@
+<html>
+    <head><title>gris example website</title>
+    <style>
+.contaniner{
+    display: grid;
+    grid-template-rows: 20px 150px 50px;
+    grid-template-columns: repeat(5px,1fr);
+}
+.top,.siteinfo,.nav{
+    display: grid;
+    grid-column: 1/-1;
+}
+.top,.nav{
+    background-color: #333;
+    color: whitesmoke;
+}
+.siteinfo{
+    grid-auto-flow: column;
+}
+.branding{
+    grid-column: 1/4;
+}
+.locater{
+    display: grid;
+    grid-column: 3/4;
+    grid-auto-flow: column;
+}
+.solcial{
+display: grid;
+grid-auto-flow: column;
+grid-column: 4/6;    
+}
+.icons{
+    border: 1px solid coral;
+}
+.nav{
+    grid-auto-flow: column;
+    }
+    </style></head>
+    <body>
+        <div class="contaniner">
+            <div class="top">
+            <div class="content">
+                <span>inforamtion@gmail.com</span>
+                <span>callus():23456789</span>
+            </div>
+            <div class="locater">
+                <span>victoria place</span>
+                <span>430 main ave norwalk</span>
+            </div>
+            </div>
+            <div class="siteinfo">
+                <div class="branding">
+                    <h1>flaton pro</h1>
+                    <h5>multi pourpose wordpress</h5>
+                </div>
+                <div class="social">
+                    <div class="icons">tiwwter</div>
+                    <div class="icons">facebook</div>
+                    <div class="icons">youtube</div>
+                </div>
+            </div>
+            <div class="nav">
+                <span>home</span><span>slider</span><span>feater</span><span>pages</span>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>grid1</title>
+        <style>.container{
+            display: grid;
+            gap: 20px;
+           grid-template-areas: 
+           "header header"
+           "sidebar content"
+           "footer footer";
+           grid-template-columns:repeat(autofit,150px);
+           grid-template-rows: 100px auto 75px;
+        }
+        .itam{
+    background-color: chocolate;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+        }
+
+        .container itam{
+            background-color: coral;
+        }
+        .itam:nth-child(1)
+        {
+            grid-area: header;
+        }
+        .itam:nth-child(2)
+        {
+            grid-area: sidebar;
+        }
+        .itam:nth-child(3)
+        {
+            grid-area: content;
+        }
+        .itam:nth-child(4)
+        {
+            grid-area: footer;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+           <div class="itam">MADURRA COLLAGEE</div>
+           <div class="itam"><img  style="width:500px;height:500"  src="C:\Users\ELCOT\Desktop\1.jpg"></div>
+           <div class="itam">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum repellat beatae nobis laborum vero libero omnis, error modi cum consectetur esse quam, voluptatibus atque suscipit necessitatibus. Aperiam, ea assumenda.</div>
+           <div class="itam">4</div>
+           <!-- <div class="itam">5</div>
+           <div class="itam">6</div> -->
+        </div>
+    </body>
+</html>

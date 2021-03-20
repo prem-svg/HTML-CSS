@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>navigation bar</title>
+        <link rel="stylesheet" href="style5.css">
+
+        <script>
+            function validate() {
+                var name1=document.getElementById("name").value;
+                var pass1=document.getElementById("pass").value;
+
+                        if(name1==""){
+                            alert("enter the name");
+                            document.form1.name.focus();
+                            return false;
+                        }                
+                        if(!isNaN(name1)){
+                            alert("enter the alphabat");
+                            document.form1.name.focus();
+                            return false;
+                        }
+                        if(pass1<6){
+                            alert('enter the at least 6 character');
+                            document.form1.pass.value="";
+                            document.form1.pass.focus();
+                            return false;
+                        }
+                        return true;
+            }
+        </script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head><body>
+            <div class="menu-bar">
+        <ul>
+            <li class="active"><i class="fas fa-home"></i><a href="#">Home</a></li>
+            <li><a href="grid.html"><i class="fas fa-clone"></i>about us</a>
+            <div class="sub-menu1">
+                <ul>
+                    <li><a href="#">mission</a></li>
+                    <li><a href="#">vision</a></li>
+                    <li><a href="#">team</a>
+                       <div class="submenu2">
+                           <ul>
+                               <li><a href="#">project team</a></li>
+                               <li><a href="#">headteam</a></li>
+                           </ul>
+                       </div>                    
+                    </li>
+                </ul>
+            </div>
+        </li>
+            <li><a href="#"><i class="fas fa-users"></i>services</a></li>
+            <li><a href="#"><i class="fas fa-angellist"></i>clients</a></li>
+            <li><a href="#"><i class="fas fa-inr"></i>investers</a></li>
+            <li><a href="#"><i class="fas fa-edit"></i>pricing</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i>training</a></li>
+            
+        </ul>
+    </div>
+    <div class="login">
+        <img src="log.jfif" class="loginimg">
+        <h1>login here</h1>
+        <form action="output.html"  method="post" name="form1">
+            <p>user name</p>
+            <input type="text" id="name" name="" placeholder="Enter the username" >
+            <p>password</p>
+            <input type="password" id="pass1" name="" placeholder="Enter the password" onclick="validate()">
+            <input type="submit" name="" value="login">
+            <a href="#">lost your password</a><br>
+            <a href="#">don't have an account</a>
+        </form>
+        <h1></h1>
+    </div>
+</body>
+</html>

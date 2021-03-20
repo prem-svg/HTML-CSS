@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>2D animation</title>
+        <style>
+            #page{
+                border: 2px solid darkgreen;
+                width:750px;
+                height: 550px;
+                margin: 0 auto;
+            }
+            #box{
+                width: 100px;
+                height: 100px;
+                background-color: indigo;
+                animation-name:move;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 3;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+            }
+            @keyframes move{
+                from { transform:translatex(0) }
+                to { transform:translatey(450px) }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="page">
+            <div id="box"></div>
+        </div>
+    </body>
+</html>

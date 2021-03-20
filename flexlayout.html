@@ -1,0 +1,66 @@
+<html>
+    <head><title>flexlayout</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: honeydew;
+            color:black;
+            text-align: center;
+        }
+        .flex-container{
+            display: flex;
+            
+        }
+        header,section,aside,footer{
+            margin: 0;
+            padding: 20px;
+            border:1px solid black;
+                    }
+          header{
+              background-color: blue;
+
+          }   
+          .menu{
+              background-color: red;
+              flex-basis:600px;
+              
+          }   
+          .content{
+          background-color: green;
+          flex-basis: 500px;
+
+          }
+          .aside{
+              background-color: lawngreen;
+
+          }   
+          footer{
+              background-color: brown;
+          } 
+    </style></head>
+    <body>
+        <header>
+            <h1>CSS FLEXBOX</h1>
+        </header>
+            <div class="flex-container">
+                <section class="menu">
+                    <h1>menu items</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ad esse molestiae obcaecati et architecto dicta sed reprehenderit velit recusandae, optio ipsa sapiente tenetur aliquam voluptate laudantium? Praesentium, ea neque?</p>
+                </section>
+                <!--content-->
+                <section class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ad illo ab. Saepe, laborum aliquid iusto autem esse magnam assumenda officiis nisi tempora cupiditate! Aut unde odit labore consequuntur tempore.</p>
+                </section>
+                <!--sidebar-->
+                <aside>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere iure, ea labore fugit recusandae fugiat, ex sunt omnis delectus consequatur ducimus consectetur. Soluta perferendis error rem laborum aperiam itaque eaque.</p>
+                </aside>
+                </div> 
+                <footer>
+                    &copy;copyrights of digitalmedia
+                </footer>                
+          
+    </body>
+
+</ht
+ml>

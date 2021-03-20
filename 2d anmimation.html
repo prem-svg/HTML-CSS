@@ -1,0 +1,40 @@
+<html>
+    <head><title>2D Animation</title>
+    <style>
+        #page{
+            border:2px solid brown;
+            width:500px;
+            height:500px;
+            margin: 0 auto;
+        }
+        #box{
+            width:100px;
+            height:100px;
+            background-color: yellow;
+            animation-name:move;
+             animation-fill-mode: forwards;
+            animation-iteration-count: 3;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-direction: alternate
+     
+        }
+        @keyframes move{
+    0%{
+        transform: translateX(0px) translateY(0px)}
+25%{transform: translateX(400px) translateY(0px)}
+50%{transform: translateX(400px) translateY(400px)}      
+75%{transform: translateX(0px)translateY(400px)}
+100%{transform: translateX(0px)translateY(0px)} 
+        }   
+    </style>
+    </head>
+    <body>
+        <h1>2D Animation</h1>
+        <div id="page">
+            <div id="box">
+
+            </div>
+        </div>
+    </body>
+</html>

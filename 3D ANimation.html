@@ -1,0 +1,73 @@
+<html>
+    <head><title>3D Animation</title>
+    <style>
+     .scence{
+         width: 300px;
+         height: 300px;
+         margin: 75px auto;
+         border:1px solid red ;
+     }
+     .card{
+         border:1px solid black;
+         width:100%;
+         height:100%;
+         perspective:500px;
+     }
+     #face-top{
+         background-color:green;
+         width:100%;
+         height:100%;
+         font-size: 4rem;
+         text-align: center;
+         line-height: 300px;
+         transform: rotateY(91deg) translateZ(150px);
+         position: relative;
+     }
+     #face-bottom{
+         background-color: yellow;
+         width:100%;
+         height:100%;
+         font-size: 4rem;
+         text-align: center;
+         line-height: 300px;
+         transform: rotateX(91deg) translateZ(150px);
+     }
+     #face-right{
+         background-color:red;
+         width:100%;
+         height:100%;
+         font-size: 4rem;
+         text-align: center;
+         line-height: 300px;
+         transform: rotateY(91deg) translateZ(-150px);
+         position: absolute;
+     }
+     #face-left{
+         background-color:blue;
+         width:100%;
+         height:100%;
+         font-size: 4rem;
+         text-align: center;
+         line-height: 300px;
+         transform: rotateX(95deg) translateZ(-150px);
+     }
+    </style></head>
+    <body>
+            <div class="scence">
+                <div class="card">
+                    <div id="face-top">
+                        <p>card</p>
+                    </div>
+                    <div id="face-bottom">
+                        <p>card</p>
+                    </div>
+                    <div id="face-right">
+                        <p>card</p>
+                    </div>
+                    <div id="face-left">
+                        <p>card</p>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
